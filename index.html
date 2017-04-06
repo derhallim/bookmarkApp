@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Bookmark App</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+
+    <!-- Custom styles for this template -->
+    <link href="narrow-css.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body  >
+
+    <div class="container">
+        <div class="header clearfix">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active"><a href="#">Home</a></li>
+                    <li role="presentation"><a href="#">About</a></li>
+                    <li role="presentation"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">Bookmarker App</h3>
+        </div>
+
+        <div class="jumbotron">
+            <h1></h1>
+            <p class="lead">Add your links here and save them</p>
+           
+            <form id="formBookmark" onload="document.getElementById('txtSiteName').focus()">
+                <div class="form-group">
+                    <label for="txtSiteName">Site Name:</label>
+                    <input type="text" name="txtSiteName" id="txtSiteName" class="form-control" placeholder="Google" />
+                </div>
+                <div class="form-group">
+                    <label for="txtSiteUrl">Site Url:</label>
+                    <input type="text" name="txtSiteUrl" id="txtSiteUrl" class="form-control" placeholder="http://google.com"/>
+                </div>
+                <button class="btn btn-success" id="btnAddLink" type="submit">Add Bookmark</button>
+            </form>
+            
+             <p><i><small>Created by Mohamed Derhalli</small></i></p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div id="bookmarkResults"></div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2016 Derhallim, Inc.</p>
+        </footer>
+
+    </div>
+    <!-- /container -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src='app.js'></script>
+</body>
+
+</html>
